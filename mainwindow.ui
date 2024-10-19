@@ -28,6 +28,9 @@
         <pointsize>14</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="text">
        <string/>
       </property>
@@ -347,7 +350,9 @@
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(59, 59, 59);</string>
+         <string notr="true">background-color: rgb(59, 59, 59);
+
+</string>
         </property>
         <property name="text">
          <string>0</string>

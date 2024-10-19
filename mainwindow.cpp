@@ -5,7 +5,38 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    QString a  =        "QPushButton { "
+               "border-radius: 25px; "
+               "background-color: #3b3b3b; "
+               "} "
+               "QPushButton:hover { "
+               "background-color: #003b3b; "
+               "} "
+               "QPushButton:pressed { "
+               "background-color: #1c598a; "
+                "}";
     ui->setupUi(this);
+    ui->button_1->setStyleSheet(a);
+    ui->button_2->setStyleSheet(a);
+    ui->button_3->setStyleSheet(a);
+    ui->button_4->setStyleSheet(a);
+    ui->button_5->setStyleSheet(a);
+    ui->button_6->setStyleSheet(a);
+    ui->button_7->setStyleSheet(a);
+    ui->button_8->setStyleSheet(a);
+    ui->button_9->setStyleSheet(a);
+    ui->button_0->setStyleSheet(a);
+
+    ui->button_plus->setStyleSheet(a);
+    ui->button_minus->setStyleSheet(a);
+    ui->button_equal->setStyleSheet(a);
+    ui->button_plus_minus->setStyleSheet(a);
+    ui->button_devide->setStyleSheet(a);
+    ui->button_multiply->setStyleSheet(a);
+    ui->button_erase_everything->setStyleSheet(a);
+    ui->button_one_character->setStyleSheet(a);
+    ui->button_delete_typed_text->setStyleSheet(a);
+
 }
 
 MainWindow::~MainWindow()
@@ -242,5 +273,3 @@ void MainWindow::update_Lcd_Operand()
 {
     ui->lcdOperand->display(operand);
 }
-
-
